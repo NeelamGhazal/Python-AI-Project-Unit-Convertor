@@ -2,56 +2,6 @@ import streamlit as st # type: ignore
 import pandas as pd # type: ignore
 from datetime import datetime
 
-# Custom CSS Styling
-st.markdown("""
-<style>
-    :root {
-        --primary: #1a73e8;
-        --background: #ffffff;
-        --text: #2c3e50; /* Dark Gray Text */
-    }
-    
-    [data-testid="stAppViewContainer"] {
-        background: var(--background);
-        color: var(--text); /* Ensures text color is dark */
-        max-width: 1200px;
-        margin: auto;
-        padding: 2rem 3rem;
-    }
-
-    .header {
-        border-bottom: 2px solid #eee;
-        padding-bottom: 1.5rem;
-        margin-bottom: 2rem;
-        color: var(--text); /* Dark header text */
-    }
-
-    .conversion-card {
-        background: #f8f9fa;
-        border-radius: 15px;
-        padding: 2rem;
-        margin: 1.5rem 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        color: var(--text); /* Ensures card text is dark */
-    }
-
-  .stButton > button {
-#         border-radius: 25px;
-#         padding: 0.7rem;
-#         transition: all 0.3s;
-#     }
-#     .stButton > button:hover {
-#         transform: translateY(-1px);
-#         box-shadow: 0 4px 12px rgba(26,115,232,0.2);
-#     }
-
-    /* Ensuring all text is dark */
-    body, h1, h2, h3, h4, h5, h6, p, div {
-        color: var(--text) !important;
-    }
-</style>
-""", unsafe_allow_html=True)
-
 
 # Conversion Database
 conversion_rates = {
